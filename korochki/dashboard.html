@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мои заявки – Корочки.есть</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo">Корочки.есть</div>
+        <a href="logout.php" class="logout">Выход</a>
+      </div>
+    </header>
+    <h1>Мои заявки</h1>
+    <div class="card">
+      <p><strong>Курс:</strong> Основы веб-дизайна</p>
+      <p><strong>Дата начала:</strong> 10.06.2025</p>
+      <p><strong>Оплата:</strong> Наличными</p>
+      <p><strong>Статус:</strong> Обучение завершено</p>
+      <form action="feedback.php" method="POST">
+        <input type="hidden" name="application_id" value="1" />
+        <textarea name="feedback" placeholder="Оставьте отзыв..." required></textarea>
+        <button type="submit">Отправить отзыв</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

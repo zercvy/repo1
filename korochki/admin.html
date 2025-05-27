@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Админ-панель – Корочки.есть</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo">Корочки.есть</div>
+        <a href="logout.php" class="logout">Выйти</a>
+      </div>
+    </header>
+    <h1>Админ-панель</h1>
+    <div class="card">
+      <p><strong>Пользователь:</strong> Иванов Иван</p>
+      <p><strong>Курс:</strong> Основы алгоритмизации</p>
+      <p><strong>Дата:</strong> 12.06.2025</p>
+      <p><strong>Оплата:</strong> Перевод</p>
+      <p><strong>Статус:</strong> Новая</p>
+      <form action="update_status.php" method="POST">
+        <input type="hidden" name="application_id" value="1" />
+        <select name="status" required>
+          <option value="">-- Изменить статус --</option>
+          <option value="Идет обучение">Идет обучение</option>
+          <option value="Обучение завершено">Обучение завершено</option>
+        </select>
+        <button type="submit">Обновить</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

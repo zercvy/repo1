@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css"><title>Добавить карточку</title></head>
+<body><div class="container"><h1>Новая карточка</h1>
+<form action="card.php" method="POST">
+  <input name="author" placeholder="Автор книги" required>
+  <input name="title" placeholder="Название книги" required>
+  <select name="type" required>
+    <option value="">Тип</option>
+    <option value="Готов поделиться">Готов поделиться</option>
+    <option value="Хочу в свою библиотеку">Хочу в свою библиотеку</option>
+  </select>
+  <input name="publisher" placeholder="Издательство">
+  <input name="year" placeholder="Год издания">
+  <input name="cover" placeholder="Переплет">
+  <textarea name="condition" placeholder="Состояние книги"></textarea>
+  <button type="submit">Добавить карточку</button>
+</form>
+<p><a href="dashboard.php">Назад</a></p>
+</div></body></html>

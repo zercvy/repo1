@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Заявка на курс – Корочки.есть</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo">Корочки.есть</div>
+      </div>
+    </header>
+    <h1>Заявка на обучение</h1>
+    <form action="application.php" method="POST" class="form">
+      <label for="course">Курс:</label>
+      <select name="course" id="course" required>
+        <option value="">-- Выберите курс --</option>
+        <option value="Основы алгоритмизации и программирования">Основы алгоритмизации и программирования</option>
+        <option value="Основы веб-дизайна">Основы веб-дизайна</option>
+        <option value="Основы проектирования баз данных">Основы проектирования баз данных</option>
+      </select>
+      <label for="start_date">Желаемая дата начала:</label>
+      <input type="text" name="start_date" placeholder="ДД.ММ.ГГГГ" pattern="^\d{2}\.\d{2}\.\d{4}$" required />
+      <label for="payment">Способ оплаты:</label>
+      <select name="payment" id="payment" required>
+        <option value="">-- Выберите способ --</option>
+        <option value="наличными">Наличными</option>
+        <option value="переводом на банковский счет">Переводом на банковский счет</option>
+      </select>
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </div>
+</body>
+</html>
